@@ -1,4 +1,6 @@
 // Header.jsx
+
+import {PrimaryButton} from '../reusable/buttons/PrimaryButton';
 export default function Header() {
     return (
       <div className="relative bg-white w-full h-[793px]">
@@ -23,9 +25,9 @@ export default function Header() {
         </div>
         
         <div className="absolute top-0 right-0 p-6">
-          <button className="bg-transparent text-blue-600 py-2 px-4 rounded-md hover:bg-blue-50 transition duration-300">
+          <PrimaryButton onClick={()=>{}}>
             Contact Us
-          </button>
+          </PrimaryButton>
         </div>
       </div>
     );

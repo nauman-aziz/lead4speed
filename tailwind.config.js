@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "radial-gradient":
-          "radial-gradient(circle, rgba(19,51,81,1) 0%, rgba(37,99,155,1) 100%)",
+          "radial-gradient(circle, teal 0%, teal 100%)",
         // Adjust the color values above to match the gradient in your image.
       }),
     },
