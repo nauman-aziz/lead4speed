@@ -1,3 +1,5 @@
+import StepCard from "../reusable/cards/stepCards/StepCard";
+
 // StepsSection.jsx
 export default function StepsSection() {
     return (
@@ -8,30 +10,49 @@ export default function StepsSection() {
           <Statistic value="20+" label="Team Advisors" />
         </div>
   
-        <h2 className="text-3xl font-bold text-center mb-8">
-          You’re Just 4 Steps Away From Getting Potential Deals Sent Right To You!
-        </h2>
+        <div className="flex"> 
+        <div>
+
+          <h2 className="text-3xl font-bold text-center mb-8">
+            You’re Just 4 Steps Away From Getting Potential Deals Sent Right To You!
+          </h2>
+          {/* Add the image somewhere within the layout as needed */}
+          <div className="w-full max-w-xs">
+            <img src="/path-to-your-image.jpg" alt="Handshake" className="rounded-full" />
+          </div>
+        </div>
+
   
-        <div className="grid grid-cols-2 gap-8 max-w-6xl px-10">
-          <Step number="1" title="Book a Call To Get Started" description="Lorem ipsum..." />
-          <Step number="2" title="Tell Us How Many Callers You Want" description="Lorem ipsum..." />
-          <Step number="3" title="We Start Sending You Leads" description="Lorem ipsum..." />
-          <Step number="4" title="You Close Deals & Make More Money" description="Lorem ipsum..." />
+        <div className="grid grid-cols-2 gap-8 max-w-4xl px-10">
+          <StepCard  colour = "#55D352" title="Book a Call To Get Started" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+          <StepCard  colour = "#63E4E333" title="Tell Us How Many Callers You Want" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+          <StepCard  colour = "#FFEBE6" title="We Start Sending You Leads" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+          <StepCard  colour = "#FFECDD" title="You Close Deals & Make More Money" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+        </div>
         </div>
         
-        {/* Add the image somewhere within the layout as needed */}
-        <div className="w-full max-w-xs">
-          <img src="/path-to-your-image.jpg" alt="Handshake" className="rounded-full" />
-        </div>
+       
       </div>
     );
   }
   
-  // Statistic.jsx
+  // Statistic
   function Statistic({ value, label }) {
     return (
       <div className="text-center">
-        <div className="text-4xl font-bold text-teal-600">{value}</div>
+      <div
+        style={{
+          background: 'linear-gradient(to right, #38b2ac, #a3e635)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          textFillColor: 'transparent',
+        }}
+        className="text-4xl font-bold"
+      >
+        {value}
+      </div>
+
         <div className="text-lg text-gray-700">{label}</div>
       </div>
     );

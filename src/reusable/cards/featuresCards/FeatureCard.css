@@ -1,0 +1,34 @@
+/* FeatureCard.css */
+
+.my-component {
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 38px 32px;
+  }
+  
+  .my-image {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 80px;
+  }
+  
+  .heading {
+    color: black;
+    margin-top: 34px;
+    font: 600 20px Inter, sans-serif;
+  }
+  
+  .description {
+    color: rgba(41, 47, 50, 0.80);
+    align-self: stretch;
+    margin-top: 24px;
+    font: 400 14px/24px Inter, sans-serif;
+  }
+  

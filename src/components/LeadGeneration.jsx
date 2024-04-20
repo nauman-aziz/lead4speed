@@ -1,3 +1,5 @@
+import LeadGenerationCard from "../../src/reusable/cards/leadGenerationCards/LeadGenerationCard.jsx";
+
 // LeadGeneration.jsx
  const LeadGeneration = () => {
     return (
@@ -9,6 +11,7 @@
             <LeadGenerationCard title="State of the Art Systems" description="Some explanatory text would make it look better and help to avoid large gaps" />
             <LeadGenerationCard title="Priced to Perfection" description="Some explanatory text would make it look better and help to avoid large gaps" />
             <LeadGenerationCard title="Flexible Plans" description="Some explanatory text would make it look better and help to avoid large gaps" />
+            
           </div>
           
           <div className="max-w-md">
@@ -21,18 +24,6 @@
       );
   }
   
-  // LeadGenerationCard.jsx
-  function LeadGenerationCard({ title, description }) {
-    return (
-      <div className="flex items-start space-x-4">
-        <span> {/* Icon or bullet point */}</span>
-        <div>
-          <h3 className="text-xl font-semibold text-gray-700">{title}</h3>
-          <p className="text-gray-500">{description}</p>
-        </div>
-      </div>
-    );
-  }
 
 export default LeadGeneration;
   

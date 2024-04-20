@@ -1,5 +1,6 @@
 // Header.jsx
 
+import IconButton from '../reusable/buttons/IconButton';
 import {PrimaryButton} from '../reusable/buttons/PrimaryButton';
 export default function Header() {
     return (
@@ -14,9 +15,10 @@ export default function Header() {
             <p className="text-lg text-gray-600">
               We help agents close above their quota. Claim your<br/>territory before someone else does.
             </p>
-            <button className="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300">
+            {/* <button className="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300">
               Get Started
-            </button>
+            </button> */}
+           <IconButton text = "Get Started" icon ="https://cdn.builder.io/api/v1/image/assets/TEMP/073189ccad8e4c9882f9190663d32cfab19239a5a514183709a7e12f8c28fc2f?apiKey=7d405dfd16d04cc09b1228b2b600b47a&"></IconButton>
           </div>
   
           <div className="flex-none">

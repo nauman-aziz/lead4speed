@@ -1,3 +1,7 @@
+import TestimonialCard from "../reusable/cards/testimonialCards/TestimonialCard";
+
+
+
 // Testimonial.jsx
 export default function Testimonial() {
     return (
@@ -21,19 +25,19 @@ export default function Testimonial() {
   }
   
   // TestimonialCard.jsx
-  function TestimonialCard() {
-    return (
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-        <blockquote className="text-gray-600 italic mb-4">
-          “Lorem Ipsum is simply dummy text of the printing and typesetting industry...”
-        </blockquote>
-        <div className="flex items-center mb-4">
-          <div className="text-yellow-400">★★★★★</div>
-        </div>
-        <footer>
-          <p className="font-semibold text-gray-800">Robert Johnson</p>
-          <p className="text-sm text-gray-500">Manager, Sherlock Homes LLC</p>
-        </footer>
-      </div>
-    );
-  }
+//   function TestimonialCard() {
+//     return (
+//       <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+//         <blockquote className="text-gray-600 italic mb-4">
+//           “Lorem Ipsum is simply dummy text of the printing and typesetting industry...”
+//         </blockquote>
+//         <div className="flex items-center mb-4">
+//           <div className="text-yellow-400">★★★★★</div>
+//         </div>
+//         <footer>
+//           <p className="font-semibold text-gray-800">Robert Johnson</p>
+//           <p className="text-sm text-gray-500">Manager, Sherlock Homes LLC</p>
+//         </footer>
+//       </div>
+//     );
+//   }
